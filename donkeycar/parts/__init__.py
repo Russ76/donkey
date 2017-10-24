@@ -12,7 +12,7 @@ from .actuators.actuators import PWMThrottle
 from .actuators.actuators import MockController
 
 from .controllers.web import LocalWebController
-from .controllers.joystick import JoystickPilot
+from .controllers.joystick import JoystickController
 from .controllers.pid import PIDController
 
 from .sensors.cameras import PiCamera
@@ -35,8 +35,15 @@ from .stores.tub import TubReader
 from .stores.tub import TubWriter
 from .stores.tub import TubHandler
 from .stores.tub import TubImageStacker
+from .stores.tub import TubTimeStacker
+from .stores.tub import TubChain
 
 from .transforms import Lambda
 
 from .simulations import SquareBoxCamera
 from .simulations import MovingSquareTelemetry
+
+from .sim_server import SteeringServer
+
+#when ready to introduce OpenCV dependencies
+#from .cv.cv import ImgStack
